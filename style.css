@@ -1,0 +1,123 @@
+:root {
+  --background-color: #f0f2f5;
+  --primary-color: #484eed;
+  --white: #fff;
+  --grey: #e7e7e7;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+  /* sempre tirar o padding e o margin */
+}
+
+body {
+  background: var(--background-color);
+  --webkit-font-smoothing: antialiased;
+}
+
+body,
+input,
+textarea,
+button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+button {
+  cursor: pointer;
+}
+.header {
+  background-color: var(--primary-color);
+} /*etilizar a div pai antes da div filha*/
+.header header {
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 0;
+}
+.header header .nav-group {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.header header .nav-group a {
+  text-decoration: none;
+  color: var(--white);
+  font-weight: 400;
+}
+.header header h1 {
+  color: var(--white);
+  font-weight: 700;
+  font-size: 2rem;
+}
+.header header h1:hover {
+  cursor: pointer;
+}
+.header header button {
+  background-color: var(--white);
+  border: 0;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-size: 0.875rem;
+}
+.header header button:hover {
+  color: cyan;
+  -webkit-box-shadow: -11px 3px 31px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -11px 3px 31px -7px rgba(0, 0, 0, 0.75);
+  box-shadow: -11px 3px 31px -7px rgba(0, 0, 0, 0.75);
+}
+.bg-color-primary{
+    background-color: var(--primary-color);
+}
+.primary-view{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 88vh;
+    justify-content: center;
+    padding: 0rem 10rem;
+    text-align: center;
+    gap: 2rem;
+    color: var(--white);
+    font-family: 'Poppins', sans-serif;
+}
+
+.primary-view h1{
+    font-size: 3.15rem;
+    font-weight: 700;
+}
+.primary-view p{
+    font-size: 1.25rem;
+}
+.primary-view .button-group .white{
+    border: 0;
+    background-color: var(--white);
+    padding: 0.5rem 1.5rem;
+    border-radius: 2rem;
+    font-size: 1.25rem;
+}
+.primary-view .button-group .black{
+    border: 0;
+    background-color: #31333B;
+    padding: 0.5rem 1.5rem;
+    border-radius: 2rem;
+    font-size: 1.25rem;
+    color: var(--white);
+}
+.button-group{
+    display: flex;
+    gap: 1rem;
+}/*WEBP OU SVG PARA IMAGENS EM SITES
+//UTILIZAR O FONTAWESOM QUE SELECIONA ICONES
